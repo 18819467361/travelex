@@ -66,7 +66,7 @@
 
 /* states and images */
 .ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
-.ui-icon { width: 16px; height: 16px; background-image: url(/Resources/Images/ui-icons_0078ae_256x240.png); }
+.ui-icon { width: 16px; height: 16px; background-image: url(../images/ui-icons_0078ae_256x240.png); }
 .ui-corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .ui-state-disabled { cursor: default !important; }
 .ui-icon-circle-triangle-e { background-position: -48px -192px; }
@@ -74,7 +74,7 @@
 .ui-icon-circle-triangle-w { background-position: -80px -192px; }
 .ui-icon-circle-triangle-n { background-position: -96px -192px; }
 
-.fulfilment_date .ui-widget-header { border: 1px solid #0C1772; background: #0C1772 url(/Resources/Images/TitleBlueBg02.gif) 50% 50% repeat-x; color: #eaf5f7; font-weight: bold; }
+.fulfilment_date .ui-widget-header { border: 1px solid #0C1772; background: #0C1772 url(../images/TitleBlueBg02.gif) 50% 50% repeat-x; color: #eaf5f7; font-weight: bold; }
 .fulfilment_date .ui-state-default, .fulfilment_date .ui-widget-content .ui-state-default, .fulfilment_date .ui-widget-header .ui-state-default { background: #ddd; font-weight: normal; color: #888; height:18px; border:1px solid #ddd }
 
 
@@ -94,14 +94,14 @@
 .fulfilment_date .ui-widget-header .ui-state-hover,
 .fulfilment_date .ui-state-focus,
 .fulfilment_date .ui-widget-content .ui-state-focus,
-.fulfilment_date .ui-widget-header .ui-state-focus { border: 1px solid #333; background: #666 url(/Resources/Images/ui-bg_glass_85__1x400.png) 50% 50% repeat-x; font-weight: normal; color: #fff; }
+.fulfilment_date .ui-widget-header .ui-state-focus { border: 1px solid #333; background: #666 url(../images/ui-bg_glass_85__1x400.png) 50% 50% repeat-x; font-weight: normal; color: #fff; }
 
 .fulfilment_date .ui-state-hover a,
 .fulfilment_date .ui-state-hover a:hover { color: #026890; text-decoration: none; }
 
 .fulfilment_date .ui-state-active,
 .fulfilment_date .ui-widget-content .ui-state-active,
-.fulfilment_date .ui-widget-header .ui-state-active { border: 1px solid #333; background: #666 url(/Resources/Images/ui-bg_glass_85__1x400.png) 50% 50% repeat-x; font-weight: normal; color: #ffffff; }
+.fulfilment_date .ui-widget-header .ui-state-active { border: 1px solid #333; background: #666 ur../../resources/Images/ui-bg_glass_85__1x400.png) 50% 50% repeat-x; font-weight: normal; color: #ffffff; }
 
 .fulfilment_date .ui-state-active a,
 .fulfilment_date .ui-state-active a:link,

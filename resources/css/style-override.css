@@ -10,7 +10,7 @@
 /* Tabs JQuery UI */
 ul.tabs li.ui-state-active a
 {
-    background: #c90021 url(img/l/active_tab_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/active_tab_bg.png*/ left top repeat-x;
+    background: #c90021 url(../images/active_tab_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/active_tab_bg.png*/ left top repeat-x;
     border: none;
     height: 36px;
     -webkit-box-shadow: 0px 5px 7px #6a0012 inset;
@@ -58,7 +58,7 @@ div.ui-tabs-hide
 {
     background: #0058BB; /* Old browsers */
     background-position: left center;
-    background-image: url(img/l/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
+    background-image: url(../images/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
     background-image: -moz-linear-gradient(top, #015fc7 0%, #0057bd 50%, #01429f 51%, #003a8a 100%); /* FF3.6+ */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#015fc7), color-stop(50%,#0057bd), color-stop(51%,#01429f), color-stop(100%,#003a8a)); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* Chrome10+,Safari5.1+ */
@@ -233,7 +233,7 @@ select.t2
     padding: 10px;
     background: #999a9a; /* Old browsers */
     background-position: left center;
-    background-image: url(img/l/grey_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/grey_bg.png*/; /* Old browsers background image */
+    background-image: url(../images/grey_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/grey_bg.png*/; /* Old browsers background image */
     background-image: -moz-linear-gradient(top, #999a9a 0%, #999a9a 50%, #8d8e8e 51%, #8d8e8e 100%); /* FF3.6+ */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999a9a), color-stop(50%,#999a9a), color-stop(51%,#8d8e8e), color-stop(100%,#8d8e8e)); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(top, #999a9a 0%,#999a9a 50%,#8d8e8e 51%,#8d8e8e 100%); /* Chrome10+,Safari5.1+ */
@@ -383,7 +383,7 @@ ul.t3 li
 {
     background: #0058BB; /* Old browsers */
     background-position: left center;
-    background-image: url(img/l/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
+    background-image: url(../images/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
     background-image: -moz-linear-gradient(top, #015fc7 0%, #0057bd 50%, #01429f 51%, #003a8a 100%); /* FF3.6+ */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#015fc7), color-stop(50%,#0057bd), color-stop(51%,#01429f), color-stop(100%,#003a8a)); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* Chrome10+,Safari5.1+ */
@@ -429,7 +429,7 @@ a.cta-2
 {
     background-color: #dbdbdb; /* Old browsers background */
     background-position: left center;
-    background-image: url(img/l/nav_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/nav_bg.png*/; /* Old browsers background image */
+    background-image: url(../images/nav_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/nav_bg.png*/; /* Old browsers background image */
     background-image: -moz-linear-gradient(top, #ebebeb 0%, #dbdbdb 50%, #cbcaca 51%, #9d9d9d 100%); /* FF3.6+ */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(50%,#dbdbdb), color-stop(51%,#cbcaca), color-stop(100%,#9d9d9d)); /* Chrome,Safari4+ */
     background-image: -webkit-linear-gradient(top, #ebebeb 0%,#dbdbdb 50%,#cbcaca 51%,#9d9d9d 100%); /* Chrome10+, Safari5.1+ */
@@ -443,7 +443,7 @@ a.cta-2
 .basketRemoveCurrency
 {
     display: inline-block;
-    background-image: url(img/Btn_Remove.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/Btn_Remove.png*/;
+    background-image: url(../images/Btn_Remove.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/Btn_Remove.png*/;
     width: 30px;
     height: 30px;
     vertical-align: middle;

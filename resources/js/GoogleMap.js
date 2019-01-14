@@ -7,7 +7,7 @@ function GoogleMapDisplay(divMap, imgGoogleMapStatic, StoreLat, StoreLong) {
     if (isIE6) {
         divMap.style.display = 'none'; //hide interactive map
 
-        imgGoogleMapStatic.src = '../../resources/images/AjaxLoading.gif'/*tpa=https://buy.travelex.com.cn/Resources/Images/AjaxLoading.gif*/; //not really working
+        imgGoogleMapStatic.src = '../../../resources/images/AjaxLoading.gif'/*tpa=https://buy.travelex.com.../../resources/Images/AjaxLoading.gif*/; //not really working
         imgSrc = '../../../maps.google.com/maps/api/staticmap-sensor=false&zoom=14&size=500x500'/*tpa=http://maps.google.com/maps/api/staticmap?sensor=false&zoom=14&size=500x500*/;
     } else {
         imgGoogleMapStatic.style.display = 'none';  //hide static image
