@@ -1,0 +1,496 @@
+/* Style that overrides the original Bio sheet */
+
+
+.dropdownvalid-fieldTitle
+{
+    border: 3px solid #cb0021;
+    color: #cb0021;
+}
+
+/* Tabs JQuery UI */
+ul.tabs li.ui-state-active a
+{
+    background: #c90021 url(img/l/active_tab_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/active_tab_bg.png*/ left top repeat-x;
+    border: none;
+    height: 36px;
+    -webkit-box-shadow: 0px 5px 7px #6a0012 inset;
+    -moz-box-shadow: 0px 5px 7px #6a0012 inset;
+    box-shadow: 0px 5px 7px #6a0012 inset;
+}
+
+div.ui-tabs-hide
+{
+    display: none;
+}
+
+/* Phase 1 - no "Nearby" tab in store selector, adjust widths */
+.pick-up ul.tabs li
+{
+    width: 34%;
+}
+.pick-up ul.tabs li.last-child
+{
+    width: 33%;
+}
+.pick-up ul.tabs li.middle-child
+{
+    width: 33%;
+}
+.pick-up ul.tabs li.rates-last-child
+{
+    width: 50%;
+}
+.pick-up ul.tabs li.rates-first-child
+{
+    width: 50%;
+}
+.pick-up ul.tabs li.ratesjp-first-child
+{
+    width: 100%;
+}
+
+.clearboth
+{
+    clear: both;
+}
+
+.nextbottom
+{
+    background: #0058BB; /* Old browsers */
+    background-position: left center;
+    background-image: url(img/l/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
+    background-image: -moz-linear-gradient(top, #015fc7 0%, #0057bd 50%, #01429f 51%, #003a8a 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#015fc7), color-stop(50%,#0057bd), color-stop(51%,#01429f), color-stop(100%,#003a8a)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* Chrome10+,Safari5.1+ */
+    background-image: linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* W3C */
+    text-transform: none;
+    color: #FFF;
+    float: right;
+    font-size: 13px;
+    border: 1px solid #002c6b;
+    text-shadow: -1px -1px 1px #333333;
+    z-index: 1;
+}
+
+.nextbottom
+{
+    right: 6px;
+}
+.nextbottom span
+{
+    background-position: -180px -112px;
+    top: 7px;
+}
+.nextbottom:visited
+{
+    color: #FFFFFF;
+}
+
+p.warning
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+div.warning
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.maintenance
+{
+    background: #FFFFFF; /* Old browsers */
+    background-position: left center;
+    border-top: 1px solid #80AFE3;
+    border-bottom: 1px solid #002353;
+    padding: 0 10px;
+}
+
+.maintenance p
+{
+    font-size: 12px;
+    color: #FF0000;
+    line-height: 18px;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.PurchaseFunnelStoreLocationGoogleMap
+{
+    width: 100%;
+    height: 700px;
+}
+
+.dropdown-field, .dropdown-fieldcurrencyconverter
+{
+    -webkit-border-radius: 6px;
+    -webkit-appearance: menulist;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding: 10px 5px 10px 6px;
+    width: 100%;
+    box-shadow: 3px 3px 4px #7e7e7e inset;
+    -webkit-box-shadow: 3px 3px 4px #7e7e7e inset;
+    -moz-box-shadow: 3px 3px 4px #7e7e7e inset;
+    margin-bottom: 8px;
+    font-size: 15px;
+    display: block;
+    height: 40%;
+}
+
+.dropdown-fieldcurrencyconverter
+{
+    padding: 18px 5px 10px 8px;
+}
+
+.dropdown-fieldTitle
+{
+    -webkit-border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-border-radius: 6px;
+    border: 1px solid #676767;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: GrayText;
+    margin: 0;
+    padding: 0;
+    padding: 10px 5px 10px 6px;
+    width: 100%;
+    -webkit-box-shadow: 3px 3px 4px #7e7e7e inset;
+    -moz-box-shadow: 3px 3px 4px #7e7e7e inset;
+    box-shadow: 3px 3px 4px #7e7e7e inset;
+    margin-bottom: 8px;
+    font-size: 15px;
+    display: block;
+    height: 40%;
+}
+
+
+
+.text-fieldcurrencyconverter
+{
+    -webkit-border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-border-radius: 6px;
+    border: 1px solid #676767;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: GrayText;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding: 10px 5px 10px 6px;
+    -webkit-box-shadow: 3px 3px 4px #7e7e7e inset;
+    -moz-box-shadow: 3px 3px 4px #7e7e7e inset;
+    box-shadow: 3px 3px 4px #7e7e7e inset;
+    margin-bottom: 8px;
+    font-size: 15px;
+    width: 70%;
+    float: right;
+    display: inline;
+    height: 30px;
+}
+
+select.t3
+{
+    display: inline;
+}
+
+select.t2
+{
+    display: inline;
+}
+
+.currencycodetext
+{
+    font-size: 24px;
+    float: left;
+    padding: 10px 0 9px;
+}
+
+.instructions
+{
+    font: inherit;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    color: white;
+    font-weight: bold;
+    vertical-align: baseline;
+    padding: 10px;
+    background: #999a9a; /* Old browsers */
+    background-position: left center;
+    background-image: url(img/l/grey_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/grey_bg.png*/; /* Old browsers background image */
+    background-image: -moz-linear-gradient(top, #999a9a 0%, #999a9a 50%, #8d8e8e 51%, #8d8e8e 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999a9a), color-stop(50%,#999a9a), color-stop(51%,#8d8e8e), color-stop(100%,#8d8e8e)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #999a9a 0%,#999a9a 50%,#8d8e8e 51%,#8d8e8e 100%); /* Chrome10+,Safari5.1+ */
+    background-image: linear-gradient(top, #999a9a 0%,#999a9a 50%,#8d8e8e 51%,#8d8e8e 100%); /* W3C */
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #555555;
+    position: relative;
+    font-size: 15px;
+}
+
+p:empty
+{
+    display: none;
+}
+
+
+
+/* for index.cshtml */
+#Languages
+{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#Languages a
+{
+    margin-right: 10px;
+}
+
+#Languages span
+{
+    margin-right: 10px;
+}
+
+
+/*Store locator CSS*/
+ul.t3 li
+{
+    width: 33.333%;
+}
+
+
+/*Online Rates CSS*/
+#ratesTable
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.rowa
+{
+    background: none repeat scroll 0 0 #999A9A;
+    color: #FFFFFF;
+    height: 40px;
+}
+.rowb
+{
+    height: 40px;
+}
+.cell
+{
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+}
+.cell5
+{
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+}
+.tr:nth-child(odd)
+{
+    background-color: #A4A4A4;
+    color: White;
+}
+/* SALT-74--Rates page background */
+.summary tbody td span
+{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+/* SALT-74--Order summary last page */
+
+
+.outer-info
+{
+    position: relative;
+}
+
+.outer-info img
+{
+    padding-top: 10px;
+    position: absolute;
+    right: 6px;
+}
+
+.outer-info-dropdown
+{
+    position: relative;
+}
+
+.outer-info-dropdown img
+{
+    padding-top: 10px;
+    position: absolute;
+    right: 3px;
+}
+
+.dropdown-info-button
+{
+    border: 1px solid #676767;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 3px 3px 4px #7E7E7E inset; /**color:#7f7f7e;**/
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+    margin-right: 60px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-top: 10px;
+    text-indent: 3px;
+    width: 100%;
+}
+
+.validation-summary-errors
+{
+    background: #e60032;
+    color: #FFF;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #cb0021;
+}
+.input-validation-error
+{
+    color: #cb0021;
+    border: 3px solid #cb0021;
+}
+
+
+.backbottom
+{
+    background: #0058BB; /* Old browsers */
+    background-position: left center;
+    background-image: url(img/l/blue_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/blue_bg.png*/; /* Old browsers background image */
+    background-image: -moz-linear-gradient(top, #015fc7 0%, #0057bd 50%, #01429f 51%, #003a8a 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#015fc7), color-stop(50%,#0057bd), color-stop(51%,#01429f), color-stop(100%,#003a8a)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* Chrome10+,Safari5.1+ */
+    background-image: linear-gradient(top, #015fc7 0%,#0057bd 50%,#01429f 51%,#003a8a 100%); /* W3C */
+    text-transform: none;
+    color: #FFF;
+    font-size: 13px;
+    top: 3px;
+    border: 1px solid #002c6b;
+    text-shadow: -1px -1px 1px #333333;
+    z-index: 1;
+    float: left;
+}
+
+.backbottom
+{
+    text-align: right;
+    left: 5px;
+    padding: 6px 8px 6px 25px;
+}
+.backbottom span
+{
+    background-position: -156px -112px;
+    left: 7px;
+    top: 7px;
+}
+.backbottom:visited
+{
+    color: #FFFFFF;
+}
+
+
+
+a.cta-2
+{
+    background-position: left center;
+    width: 100%;
+    margin: 4px 4px 1px 0px;
+    color: #FFFFFF;
+}
+
+.footBackNext
+{
+    background-color: #dbdbdb; /* Old browsers background */
+    background-position: left center;
+    background-image: url(img/l/nav_bg.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/l/nav_bg.png*/; /* Old browsers background image */
+    background-image: -moz-linear-gradient(top, #ebebeb 0%, #dbdbdb 50%, #cbcaca 51%, #9d9d9d 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(50%,#dbdbdb), color-stop(51%,#cbcaca), color-stop(100%,#9d9d9d)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #ebebeb 0%,#dbdbdb 50%,#cbcaca 51%,#9d9d9d 100%); /* Chrome10+, Safari5.1+ */
+    background-image: linear-gradient(top, #ebebeb 0%,#dbdbdb 50%,#cbcaca 51%,#9d9d9d 100%); /* W3C */
+    border-top: 1px solid #dededd;
+    border-bottom: 1px solid #9c9d9d;
+    height: 44px;
+    position: relative;
+}
+
+.basketRemoveCurrency
+{
+    display: inline-block;
+    background-image: url(img/Btn_Remove.png)/*tpa=https://buy.travelex.com.cn/m/Content/img/Btn_Remove.png*/;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.productCodeWithRemove
+{
+    display: inline;
+    width: calc(100% - 35px);
+}
+
+.rates-msg
+{
+    height: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-color: White;
+    margin-top: 8px;
+}
+
+.pick-up ul.tabs li.middle-childJp
+{
+    width: 50%;
+}
+.pick-up ul.tabs li.first-childJp
+{
+    width: 50%;
+}
+
+.contentPage ul
+{
+    padding-bottom: 5px;
+    margin-left: 2em;
+    list-style: disc outside none;
+}
+
+.contentPage ol
+{
+    padding-bottom: 5px;
+    margin-left: 2em;
+}
+.box_rotate
+{
+    -moz-transform: rotate(7.5deg); /* FF3.5+ */
+    -o-transform: rotate(7.5deg); /* Opera 10.5 */
+    -webkit-transform: rotate(7.5deg); /* Saf3.1+, Chrome */
+    filter: progid XImageTransform.Microsoft.BasicImage(rotation=0.083); /* IE6,IE7 */
+    -ms-filter: "progid XImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+}
