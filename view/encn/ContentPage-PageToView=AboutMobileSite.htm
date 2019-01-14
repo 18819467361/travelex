@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link href="../resources/images/Favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="../resources/css/style.css" >
+    <link rel="stylesheet" href="../resources/css/modalpopup.css" >
+    <link rel="stylesheet" href="../resources/css/style-override.css" >
+    <script src="../resources/js/ajax/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../resources/js/ajax/jquery.ui/1.8.19/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../resources/js/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <script type="text/javascript">        window.scrollTo(0, 1)</script>
+    <!--HtmlHead--><script type="text/javascript">                 var _gaq = _gaq || [];                _gaq.push(['_setAccount', 'UA-23116135-1']);                _gaq.push(['_setDomainName', 'none']);                _gaq.push(['_addIgnoredRef', 'https://buy.travelex.com.cn/m/encn/travelex.com.hk']);                _gaq.push(['_setAllowLinker', true]);                _gaq.push(['_trackPageview']);                (function() {                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);                })();</script>
+    
+    <title>About Mobile Site</title>
+</head>
+<body>
+    <div id="container">
+    <script type="text/javascript">
+        $(function () {
+            $(".clickme").each(function () {
+                var imageInstruction = $(this).attr('instructions');
+                if (imageInstruction == "") {
+                    $(this).next('select').removeClass('dropdown-info-button');
+                    $(this).next('select').addClass('dropdown-field');
+                    $(this).remove();
+                }
+            })
+
+            $(".clickme").click(function () {
+                var imageInstruction = $(this).attr('instructions');
+                $("<div>" + imageInstruction + "</div>").dialog({ autoOpen: true, draggable: false, modal: true, resizable: false, width: 'auto', height: 'auto' });
+            });
+        });
+        </script>
+        <header>
+    
+
+    <a href="Javascript:history.back()" class="btn back">Back <span></span></a>
+<h1> 
+ <a href="encn.htm" >Travelex - Worldwide money</a>
+</h1>
+
+<!--Checking if Next button to be displayed -->
+
+
+;
+</header>
+<h2>About Mobile Site</h2>
+<div id="main" role="main">
+    
+    <div class="panel contentPage">
+        <a href="http://www.miibeian.gov.cn"  target="_new">Click here</a> to find out more about Travelex.
+    </div>
+</div>
+<footer>  
+<br><a href="TermsOfUseContentPages-PageToView=TermsOfUse.htm#Online Ordering Terms and Conditions"  target="_blank">Travelex Online Terms and Conditions </a> | <a href="TermsOfUseContentPages-PageToView=TermsOfUse.htm#Frequently Asked Questions"  target="_blank">FAQ</a>｜<a href="TermsOfUseContentPages-PageToView=TermsOfUse.htm#Privacy Policy"  target="_blank">Privacy Policy</a><br>Copyright 2017 Travelex Currency Exchange (China) Company Limited.  All rights reserved.     <a href="http://www.miibeian.gov.cn"  title="沪ICP备12044029号" target="_blank">沪ICP备12044029号</a>    </footer>
+
+    </div>
+    
+</body>
+</html>

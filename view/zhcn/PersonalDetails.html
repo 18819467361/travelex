@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link href="../resources/images/Favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="../resources/css/style.css" >
+    <link rel="stylesheet" href="../resources/css/modalpopup.css" >
+    <link rel="stylesheet" href="../resources/css/style-override.css" >
+    <script src="../resources/js/ajax/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../resources/js/ajax/jquery.ui/1.8.19/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../resources/js/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <script type="text/javascript">        window.scrollTo(0, 1)</script>
+    <!--HtmlHead--><script type="text/javascript">                 var _gaq = _gaq || [];                _gaq.push(['_setAccount', 'UA-23116135-1']);                _gaq.push(['_setDomainName', 'none']);                _gaq.push(['_addIgnoredRef', 'travelex.com.hk']);                _gaq.push(['_setAllowLinker', true]);                _gaq.push(['_trackPageview']);                (function() {                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);                })();</script>
+
+    <title>Travelex - Payment Details</title>
+</head>
+<body>
+<div id="container">
+    <script type="text/javascript">
+        $(function () {
+            $(".clickme").each(function () {
+                var imageInstruction = $(this).attr('instructions');
+                if (imageInstruction == "") {
+                    $(this).next('select').removeClass('dropdown-info-button');
+                    $(this).next('select').addClass('dropdown-field');
+                    $(this).remove();
+                }
+            })
+
+            $(".clickme").click(function () {
+                var imageInstruction = $(this).attr('instructions');
+                $("<div>" + imageInstruction + "</div>").dialog({ autoOpen: true, draggable: false, modal: true, resizable: false, width: 'auto', height: 'auto' });
+            });
+        });
+    </script>
+
+
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=/m/zhcn/ContentPage?PageToView=NoJavascript" />
+    </noscript>
+
+    <script type="text/javascript">
+        var identificationTypeInfos = {};
+
+        $(function() {
+            $(".submit").click(function (ev) {
+                ev.preventDefault();
+                var title = $('#ContactDetails_Title').val();
+                var firstName = $('#ContactDetails_FirstName').val();
+                var lastName = $('#ContactDetails_LastName').val();
+                var email = $('#ContactDetails_EmailAddress').val();
+                var emailComfirm = $('#ContactDetails_EmailAddressConfirm').val();
+                var phone = $('#ContactDetails_PhoneNumber').val();
+                if(title.length<=0||
+                    firstName.length<0||
+                    lastName.length<0||
+                    email.length<0||
+                    emailComfirm.length<0||
+                    phone.length<0
+                ){
+                    window.location.href='./PersonalDetailsLeft.html'
+                } else {
+                    window.location.href = './Confirm.html'
+                }
+//                document.forms[0].submit();
+
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function noNumbers(chr) {
+            return ((chr > 31 && (chr < 48 || chr > 57)) || chr == 8 || chr == 9)
+        }
+    </script>
+
+
+    <header>
+
+
+        <a href="../Order.html" class="btn back">后退 <span></span></a>
+        <h1>
+            <a href="index.htm">Travelex - Worldwide money</a>
+        </h1>
+
+        <!--Checking if Next button to be displayed -->
+
+        <a href="#" class="btn next submit" id="fulfilmentDateNextBtn">继续 <span></span></a>
+
+        ;
+    </header>
+
+    <div id="main" class="personal-details" role="main">
+        <h2>您的资料</h2>
+        <div class="instructions">
+            您的资料 (*必须填写的信息)</div>
+
+
+        <h3><strong>您的资料</strong> <span></span></h3>
+
+        <form method="post">
+            <!--本地存儲數據-->
+            <div class="panel">
+            <fieldset>
+                <input data-val="true" data-val-required="The IsTitleRequired field is required." id="ContactDetails_IsTitleRequired" name="ContactDetails.IsTitleRequired" type="hidden" value="True" />
+
+                <div class="outer-info-dropdown">
+                    <img src="../Content/img/blueinfo.png" class="clickme" instructions="请选择称呼" />
+                    <select class="dropdown-info-button" id="ContactDetails_Title" name="ContactDetails.Title" tabindex="1"><option value="">称呼 *</option>
+                        <option value="女士">女士</option>
+                        <option value="先生">先生</option>
+                    </select>
+                </div>
+
+                <div class="outer-info-dropdown">
+                    <img src="../Content/img/blueinfo.png" class="clickme" instructions="请输入您的名字" />
+                    <input class="text-field" data-val="true" data-val-length="The field FirstName must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="The FirstName field is required." id="ContactDetails_FirstName" maxlength="50" name="ContactDetails.FirstName" placeholder="名 *" tabindex="2" type="text" value="" />
+                </div>
+                <div class="outer-info-dropdown">
+                    <img  src="../Content/img/blueinfo.png" class="clickme" instructions="请填写您的姓" />
+                    <input class="text-field" data-val="true" data-val-length="The field LastName must be a string with a maximum length of 50." data-val-length-max="50" data-val-required="The LastName field is required." id="ContactDetails_LastName" maxlength="50" name="ContactDetails.LastName" placeholder="姓 *" tabindex="4" type="text" value="" />
+                </div>
+
+            </fieldset>
+            <div id="helpermessage">
+            </div>
+            <fieldset>
+                <div class="outer-info-dropdown">
+                    <img src="../Content/img/blueinfo.png" class="clickme" instructions="请输入您的电子邮件地址" />
+                    <input class="text-field" data-val="true" data-val-email="The EmailAddress field is not a valid e-mail address." data-val-length="The field EmailAddress must be a string with a maximum length of 40." data-val-length-max="40" data-val-required="The EmailAddress field is required." id="ContactDetails_EmailAddress" maxlength="50" name="ContactDetails.EmailAddress" oncopy="return false" oncut="return false" onpaste="return false" placeholder="电子邮址 *" tabindex="8" type="email" value="" />
+                </div>
+                <div class="outer-info-dropdown">
+                    <img src="../Content/img/blueinfo.png" class="clickme" instructions="请确认您的电子邮箱地址" />
+                    <input class="text-field" data-val="true" data-val-length="The field EmailAddressConfirm must be a string with a maximum length of 40." data-val-length-max="40" data-val-required="The EmailAddressConfirm field is required." id="ContactDetails_EmailAddressConfirm" maxlength="50" name="ContactDetails.EmailAddressConfirm" oncopy="return false" oncut="return false" onpaste="return false" placeholder="确认电子邮址 *" tabindex="9" type="email" value="" />
+                </div>
+                <div class="outer-info-dropdown">
+                    <img src="../Content/img/blueinfo.png" class="clickme" instructions="请确保手机号码的真实和有效性，如无法联系，则订单将被视为无效处理。" />
+                    <input class="text-field" data-val="true" data-val-required="The PhoneNumber field is required." id="ContactDetails_PhoneNumber" name="ContactDetails.PhoneNumber" placeholder="移动电话 *" tabindex="10" type="tel" value="" />
+                </div>
+            </fieldset>
+
+        </div>
+        </form></div>
+
+
+    <footer class="clearboth">
+        <div class="footBackNext">
+
+            <a href="./Order.html" class="btn backbottom">后退 <span></span></a>
+
+
+            <a href="#" class="btn nextbottom submit" id="FooterNextBtn">继续 <span></span></a>
+
+
+
+        </div>
+
+        <ul class="clearfix crumbs">
+
+            <li class="complete justbeforeactive progress-3">
+                <span>
+                <i>                
+                    <a href="./Basket.htm">开始下单</a>
+                </i>
+                </span>
+            </li>
+            <li class="active progress-3">
+                <span>
+                <i>                
+                    <a href="#">您的资料</a>
+                </i>
+                </span>
+            </li>
+            <li class=" last progress-3">
+                <span>
+                <i>                
+确认                </i>
+                </span>
+            </li>
+
+        </ul>
+
+
+
+        <p><br>在线预订服务提供的汇率仅供参考，并非实际交易的汇率。所有汇率均会不时更新，恕不另行通知。在通济隆网点提供的汇率有可能与在线预订的汇率不同。<br><a href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PageToView=TermsOfUse#Online Ordering Terms and Conditions" target="_blank">在线预订服务条款和条件</a> | <a href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PageToView=TermsOfUse" target="_blank">常见问题</a>｜<a href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PageToView=TermsOfUse#Privacy Policy" target="_blank">隐私政策</a><br>所有版权均属通济隆外币兑换（中国）有限公司     <a href="http://www.miibeian.gov.cn" title="沪ICP备12044029号" target="_blank">沪ICP备12044029号</a></p>
+
+    </footer>
+
+    <script type="text/javascript" src="../resources/js/PersonalDetails.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            SetIdTypeCountryDropDown();
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
