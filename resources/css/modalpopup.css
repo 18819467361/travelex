@@ -27,7 +27,7 @@
 .ui-state-default .ui-icon { background-image: url(../images/closehover1.png)/*tpa=https://buy.travelex.com.cn/m/content/img/closehover1.png*//*{iconsDefault}*/; }
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(../images/closehover.png)/*tpa=https://buy.travelex.com.cn/m/content/img/closehover.png*//*{iconsHover}*/; }
 .ui-state-active .ui-icon {background-image: url(../images/closehover.png)/*tpa=https://buy.travelex.com.cn/m/content/img/closehover.png*//*{iconsActive}*/; }
-.ui-state-highlight .ui-icon {background-image: url(..images/bghighlight.png)/*tpa=https://buy.travelex.com.cn/m/Content/..images/bghighlight.png*//*{iconsHighlight}*/; }
+.ui-state-highlight .ui-icon {background-image: url(../images/bghighlight.png)/*tpa=https://buy.travelex.com.cn/m/Content/..images/bghighlight.png*//*{iconsHighlight}*/; }
 
 
 /* positioning */
