@@ -20,6 +20,8 @@
     <script src="../../resources/js/ajax/jQuery/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="../../resources/js/ajax/jquery.ui/1.8.19/jquery-ui.min.js" type="text/javascript"></script>
     <script src="../../resources/js/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <script src="../../resources/js/util.js" type="text/javascript"></script>
+
     <!--HtmlHead--><script type="text/javascript">                 var _gaq = _gaq || [];                _gaq.push(['_setAccount', 'UA-23116135-1']);                _gaq.push(['_setDomainName', 'none']);                _gaq.push(['_addIgnoredRef', 'travelex.com.hk']);                _gaq.push(['_setAllowLinker', true]);                _gaq.push(['_trackPageview']);                (function() {                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);                })();</script>
     <script type='text/javascript'>
         var _gaq = _gaq || []
@@ -56,12 +58,25 @@
                     $(this).next('select').addClass('dropdown-field');
                     $(this).remove();
                 }
-            })
+            });
 
             $(".clickme").click(function () {
                 var imageInstruction = $(this).attr('instructions');
                 $("<div>" + imageInstruction + "</div>").dialog({ autoOpen: true, draggable: false, modal: true, resizable: false, width: 'auto', height: 'auto' });
             });
+
+            if(getItem('changeCNY')){
+                var changeInfo = getItem('changeCNY');
+                var address = getItem('address');
+                var date = getItem('date');
+                var personInfo = getItem('personInfo');
+                $('.confInfo1').html(changeInfo.changeMoney+' '+changeInfo.type+' '+'(Rate '+ changeInfo.rate+')');
+                $('.confInfo2').html('&#165;'+formatMoney(changeInfo.money));
+                $('.confInfo3').html('&#165;'+formatMoney(changeInfo.money));
+                $('.confInfo4').html(date);
+                $('.confInfo5').html(address);
+                $('.confInfo6').html(getRandomStap());
+            }
         });
     </script>
     <header>
@@ -85,10 +100,10 @@
             <table>
                 <tbody>
                 <tr>
-                    <td class="col1">
+                    <td class="col1 confInfo1">
                         730.00 USD (Rate 6.8523)
                     </td>
-                    <td class="col2">
+                    <td class="col2 confInfo2">
                         &#165;5,002.18
                     </td>
                 </tr>
@@ -105,7 +120,7 @@
                 <tr>
                     <th class="col1">确认
                     </th>
-                    <th class="col2">&#165;5,002.18
+                    <th class="col2 confInfo3">&#165;5,002.18
                     </th>
                 </tr>
                 </tfoot>
@@ -133,7 +148,7 @@
                     <td class="col1">
                         <span>取汇日期:</span>
                     </td>
-                    <td class="col2left">
+                    <td class="col2left confInfo4">
                         2019-01-15
                     </td>
                 </tr>
@@ -142,7 +157,7 @@
                     <td class="col1">
                         <span>取币网点:</span>
                     </td>
-                    <td class="col2left">
+                    <td class="col2left confInfo5">
                         天津滨海国际机场一号航站楼一层国际到达
                     </td>
                 </tr>
@@ -165,7 +180,7 @@
         <h3>
             <strong>Your order number</strong></h3>
         <div class="panel">
-            <span class="orderNo">CN70978515</span>
+            <span class="orderNo confInfo6">CN70978515</span>
             <p>一旦您的预订是随时可以拿起我们会向您发送电子邮件。</p>
         </div>
         <h3>

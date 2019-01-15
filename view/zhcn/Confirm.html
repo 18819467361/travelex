@@ -78,12 +78,18 @@
                 $('.confirmInfo7').html(personInfo.firstName);
                 $('.confirmInfo8').html(personInfo.lastName);
                 $('.confirmInfo9').html(personInfo.email);
-                $('.confirmInfo10').html(personInfo.phone);
+                $('.confirmInfo10').html(phoneFormat(personInfo.phone));
             }
 
 
-            $('.Confirmation').click(function () {
-                window.location.href = './Confirmation.html';
+            $('.Confirmation').click(function (ev) {
+                if($("#marketingOptIn").is(':checked') && $("#accept").is(':checked')){
+                    window.location.href = './Confirmation.html';
+                } else {
+                    $('.validation-summary-errors').show();
+                    window.location.href = '#';
+                    ev.preventDefault();
+                }
                 return false;
             });
         })
@@ -92,16 +98,6 @@
     <noscript>
         <meta http-equiv="refresh" content="0;url=/m/zhcn/ContentPage?PageToView=NoJavascript"/>
     </noscript>
-    <script>
-        $(function () {
-            $(".submit").click(function (ev) {
-                ev.preventDefault();
-//                document.forms[0].submit();
-                // Prevent duplicate submissions
-//                $(".submit").unbind("click");
-            });
-        });
-    </script>
     <header>
 
 
@@ -116,7 +112,8 @@
     </header>
     <div id="main" class="review summary" role="main">
         <h2>订单总结</h2>
-
+        <div style="display: none" class="validation-summary-errors"><ul><li>请阅读并同意接受条款和细则以进入下一步。</li>
+        </ul></div>
 
         <h3>
             <strong>订单总结</strong>
@@ -129,10 +126,8 @@
                 <tbody>
                 <tr>
                     <td class="col1 confirmInfo1">
-                        730.00 USD (Rate 6.8523)
                     </td>
                     <td class="col2 confirmInfo2">
-                        &#165;5,002.18
                     </td>
                 </tr>
                 <tr>
@@ -148,7 +143,7 @@
                 <tr>
                     <th class="col1">确认
                     </th>
-                    <th class="col2 confirmInfo3">&#165;5,002.18
+                    <th class="col2 confirmInfo3">
                     </th>
                 </tr>
                 </tfoot>
@@ -175,7 +170,6 @@
                         <span>取汇日期:</span>
                     </td>
                     <td class="col2left confirmInfo4">
-                        2019-01-14
                     </td>
                 </tr>
 
@@ -184,7 +178,6 @@
                         <span>取币网点:</span>
                     </td>
                     <td class="col2left confirmInfo5">
-                        云南省昆明市西山区滇池路南亚风情第壹城A2中央商业广场地上壹层A2-F1-W01号商铺
                     </td>
                 </tr>
 
@@ -208,7 +201,6 @@
                         <span>姓</span>
                     </td>
                     <td class="col2left confirmInfo6">
-                        女士
                     </td>
                 </tr>
                 <tr>
@@ -216,7 +208,6 @@
                         <span>名</span>
                     </td>
                     <td class="col2left confirmInfo7">
-                        音乐
                     </td>
                 </tr>
                 <tr>
@@ -224,7 +215,6 @@
                         <span>姓</span>
                     </td>
                     <td class="col2left confirmInfo8">
-                        有
                     </td>
                 </tr>
                 <tr>
@@ -232,7 +222,6 @@
                         <span>电子邮址</span>
                     </td>
                     <td class="col2left confirmInfo9">
-                        yejiayuan@163.com
                     </td>
                 </tr>
                 <tr>
@@ -240,7 +229,6 @@
                         <span>移动电话</span>
                     </td>
                     <td class="col2left confirmInfo10">
-                        1881 3454 444
                     </td>
                 </tr>
                 </tbody>

@@ -242,7 +242,9 @@ function formatMoney(s, type) {
 
 //格式化电话号码
 function phoneFormat(v) {
-    var reg =
+    var reg =/(\d{4})/g;
+    return v.replace(reg,"$1"+' ');
+
 }
 
 //验证邮箱
@@ -321,4 +323,20 @@ function verifyPerSonForm(data) {
         $('#ContactDetails_PhoneNumber').addClass('input-validation-error')
     }
     return passVerify;
+}
+
+// 获取随机数
+function GetRandomNum(Min,Max)
+{
+    var Range = Max - Min;
+    var Rand = Math.random();
+    return(Min + Math.round(Rand * Range));
+}
+
+function getRandomStap() {
+    var str = 'CN70'
+    for (var i=0;i<6;i++){
+        str = str + GetRandomNum(0,9)
+    }
+    return str;
 }
