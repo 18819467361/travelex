@@ -240,6 +240,11 @@ function formatMoney(s, type) {
     return s;
 }
 
+//格式化电话号码
+function phoneFormat(v) {
+    var reg =
+}
+
 //验证邮箱
 function verifyEmail(val1,val2) {
 
@@ -277,25 +282,43 @@ function verifyPhone(val) {
 // 验证客户提交的表单
 function verifyPerSonForm(data) {
     var passVerify = true;
-    if(data.title.length<=0){
+    if(!data.title || data.title.length<=0){
         $('#ContactDetails_Title').addClass('input-validation-error')
         passVerify = false;
     } else {
         $('#ContactDetails_Title').removeClass('input-validation-error')
     }
-    if(data.firstName.length()<=0){
+    if(!data.firstName || data.firstName.length<=0){
         $('#ContactDetails_FirstName').addClass('input-validation-error')
         passVerify = false;
     } else {
         $('#ContactDetails_FirstName').removeClass('input-validation-error')
     }
-    if(data.lastName.length()<=0){
+    if(!data.lastName || data.lastName.length<=0){
         $('#ContactDetails_LastName').addClass('input-validation-error')
         passVerify = false;
     } else {
         $('#ContactDetails_LastName').removeClass('input-validation-error')
     }
-    passVerify = verifyPhone(data.phone) ? passVerify : false;
-    passVerify = verifyEmail(data.email,data.emailComfirm) ? passVerify : false;
+    if(data.email && data.emailConfirm){
+        passVerify = verifyEmail(data.email,data.emailConfirm) ? passVerify : false;
+    } else {
+        passVerify = false;
+        if (data.email){
+            $('#ContactDetails_EmailAddressConfirm').addClass('input-validation-error');
+            $('#ContactDetails_EmailAddress').removeClass('input-validation-error');
+        } else {
+            $('#ContactDetails_EmailAddress').addClass('input-validation-error');
+            if(!data.emailConfirm){
+                $('#ContactDetails_EmailAddressConfirm').addClass('input-validation-error');
+            }
+        }
+    }
+    if(data.phone){
+        $('#ContactDetails_PhoneNumber').removeClass('input-validation-error')
+        passVerify = verifyPhone(data.phone) ? passVerify : false;
+    } else {
+        $('#ContactDetails_PhoneNumber').addClass('input-validation-error')
+    }
     return passVerify;
 }
