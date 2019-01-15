@@ -46,9 +46,9 @@
             //获取数据兑换金额数据
             if (getItem('changeCNY')) {
                 $('#Items_0__CurrencyConverter_DomesticAmount').val(getItem('changeCNY').money);
+                setMoneySelect(getItem('changeCNY').type);
+                setRateTip(getItem('changeCNY').type);
             }
-            //校验金额数据
-
 
             $(".clickme").each(function () {
                 var imageInstruction = $(this).attr('instructions');
@@ -368,11 +368,11 @@
                         <img src="../../resources/images/blueinfo.png" alt="blueInfo" class="clickme" instructions=""/>
                         <select class="dropdown-info-button ProductCode" id="Items_0__CurrencyConverter_ProductCode"
                                 name="Items[0].CurrencyConverter.ProductCode">
-                            <option selected="selected" value="USD/USD">美元 USD</option>
+                            <option value="USD/USD">美元 USD</option>
                             <option value="HKD/HKD">港币 HKD</option>
                             <option value="JPY/JPY">日元 JPY</option>
                             <option value="">---</option>
-                            <option value="AED	/AED">阿联酋迪拉姆 AED</option>
+                            <option value="AED/AED">阿联酋迪拉姆 AED</option>
                             <option value="AUD/AUD">澳大利亚元 AUD</option>
                             <option value="MOP/MOP">澳门元 MOP</option>
                             <option value="BRL/BRL">巴西雷亚尔 BRL</option>
@@ -382,7 +382,7 @@
                             <option value="HKD/HKD">港币 HKD</option>
                             <option value="KRW/KRW">韩元 KRW</option>
                             <option value="CAD/CAD">加拿大元 CAD</option>
-                            <option value="MYR	/MYR">马来西亚林吉特 MYR</option>
+                            <option value="MYR/MYR">马来西亚林吉特 MYR</option>
                             <option value="USD/USD">美元 USD</option>
                             <option value="NOK/NOK">挪威克朗 NOK</option>
                             <option value="EUR/EUR">欧元 EUR</option>

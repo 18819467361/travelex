@@ -61,14 +61,13 @@ Travelex.PurchaseFunnel.Calendar = function (hidFieldId, divId, minDate, maxDate
 
     this.OnSelect = function (date) {
         var selectedDate = $('#' + me.divId).datepicker('getDate');
-
         var i;
+        window.location.href='./Order.html'
         for (i = 0; i < me.dateDictionary.length; i++) {
             if (me.dateDictionary[i][0].toString() == selectedDate.toString()) {
                 $('#' + me.hidFieldId).val(date);
                 $('#fulfilmentOptionId').val('');
                 $('#fulfilmentOptionId').val(me.dateDictionary[i][2]);
-                document.forms[0].submit();
                 $('#fulfilmentDateNextBtn').css('display', 'inline');
                 return;
             }
