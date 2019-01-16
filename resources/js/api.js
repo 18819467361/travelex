@@ -18,6 +18,7 @@ function postFrom() {
     };
     $.post(url,data,function (data) {
         console.log('res:',data)
+        window.location.href='./Confirmation.html'
     })
 }
 function getTest() {
