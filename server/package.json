@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "a node.js project for travelex",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=test node app.js",
+    "pro": "pm2 start process.json --env pro",
+    "dev": "pm2 start process.json --env dev",
+    "test": "pm2 start process.json --env test"
+  },
+  "dependencies": {
+    "cross-env": "^5.0.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  },
+  "author": "noOne",
+  "license": "ISC"
+}

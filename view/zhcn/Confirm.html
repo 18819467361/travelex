@@ -79,11 +79,14 @@
                 $('.confirmInfo8').html(personInfo.lastName);
                 $('.confirmInfo9').html(personInfo.email);
                 $('.confirmInfo10').html(phoneFormat(personInfo.phone));
+            }else{
+                window.location.href='./index.htm'
             }
 
 
             $('.Confirmation').click(function (ev) {
                 if($("#marketingOptIn").is(':checked') && $("#accept").is(':checked')){
+
                     window.location.href = './Confirmation.html';
                 } else {
                     $('.validation-summary-errors').show();
@@ -251,7 +254,7 @@
                         当您点击左框后即表示您已阅读、了解并同意遵守我们的<a
                             href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PageToView=TermsOfUse#Online Ordering Terms and Conditions"
                             target="_blank">在线预订服务条款和条件</a> 并同意通过本网站提交外币订单，进入订单的下一步。 在您下订单前，请仔细阅读<a
-                            href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PageToView=TermsOfUse#Online Ordering Terms and Conditions"
+                            href="http://buy.travelex.com.cn/m/zhcn/TermsOfUseContentPages?PagreToView=TermsOfUse#Online Ordering Terms and Conditions"
                             target="_blank">在线预订服务条款和条件</a> 中的相关条款，尤其是免责或责任限制条款。 </label>
                 </div>
                 <div>如需取消您的订单，请直接致电我们的客服热线400 821 6825。人工服务时间为周一至周日，10:30至21:30。请点击此处阅读适用的<a
